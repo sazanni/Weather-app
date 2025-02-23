@@ -7,8 +7,6 @@ import GlobalStyles from '../../GlobalStyles';
 import CityWeather from '../WeatherPage/CityWeather';
 import { useSelector } from 'react-redux';
 import { useState } from 'react';
-const nowData = new Date()
-const nowHours = nowData.getHours()
 const themes = [clearTheme, heatTheme, windTheme, snowfallTheme, rainTheme, sunnyTheme, cloudyTheme];
 
 const App: React.FC = () => {
