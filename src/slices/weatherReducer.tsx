@@ -10,7 +10,6 @@ const initialState: WeatherForecastEntry = {
     inputValue: "",
     weatherObject: {},
     currentCity: ""
-    
 };
 
 const weatherSlice = createSlice({
