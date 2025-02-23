@@ -70,12 +70,12 @@ const WeatherDayChart: React.FC = () => {
           <XAxis
             dataKey="name"
             tick={({ x, y, payload }) => (
-              <text x={x + 2} y={y + 15} textAnchor="middle" fill="#ffffff">{payload.value}</text> // Добавлен отступ
+              <text x={x + 2} y={y + 15} textAnchor="middle" fill="#ffffff">{payload.value}</text> 
             )}
           />
           <YAxis
             tick={({ x, y, payload }) => (
-              <text x={x - 10} y={y + 6} textAnchor="end" fill="#ffffff">{payload.value}</text> // Добавлен отступ
+              <text x={x - 10} y={y + 6} textAnchor="end" fill="#ffffff">{payload.value}</text> 
             )}
           />
           <Tooltip content={<CustomTooltip />} />
