@@ -21,9 +21,9 @@ interface Option {
 const SuggestionInput: React.FC = () => {
     const [suggestions, setSuggestions] = useState<string[]>([]);
     const options: Option[] = [];
-    const dispatch = useDispatch();
     const [inputValue, setInputValue] = useState("");
     const navigate = useNavigate();
+    const dispatch = useDispatch();
     
     const debouncedAutoFills = useDebounce(async (value: string) => {
         const autoFillSuggestions = await Weather.getAutoFill(value) as { name: string }[];
